@@ -1,0 +1,267 @@
+
+a.animated-button.thar-three {
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	border: 2px solid #F7CA18;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+0s;
+}
+a.animated-button.thar-three:hover {
+	color: #000 !important;
+	background-color: transparent;
+	text-shadow: nthree;
+}
+a.animated-button.thar-three:hover:before {
+	left: 0%;
+	right: auto;
+	width: 100%;
+}
+a.animated-button.thar-three:before {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+	color: #000 !important;
+	background: #F7CA18;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+0s;
+}
+
+a {
+	width: 100px;
+	opacity:0;  
+  -webkit-animation:fadeIn ease-in 1;   
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards; 
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration: 6s;
+  -moz-animation-duration:6s;
+  animation-duration:6s;
+   font-family: 'Eczar', serif;
+
+}
+
+.heading-container{
+	position: absolute;
+  width: 300px;
+  height: 200px;
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -150px;
+  color: #fefefe;
+
+}
+
+
+.heading{
+	      font-weight: 900;
+    font-family: 'Eczar', serif;
+    letter-spacing: -0.2px;
+    font-size: 50px;
+}
+
+
+.tagline{
+    font-weight: 400;
+    text-transform: uppercase;
+  font-family: 'Eczar', serif;    
+  font-size: 20px;
+}
+
+.rectangle{
+    width:40px;
+    height:40px;
+    border: 2px solid #01edf7;
+    top: 30px;
+    left: 200px;
+   display: flex;
+   justify-content: space-between;
+   position: absolute;
+}
+
+
+
+
+#rec {
+	margin-bottom: 200px;
+	margin-left: 200px;
+ transiton: width 2s;
+	animation: 25s ease-out 0s 1 grow, 25s ease-out 0s 1 spin;
+	-webkit-animation: 25s ease-out 0s 1 grow, 25s ease-out 0s 1 spin;
+	-moz-animation: 25s ease-out 0s 1 grow, 25s ease-out 0s 1 spin;
+   -webkit-animation-fill-mode: forwards;
+   animation-fill-mode: forwards;
+   -moz-animation-fill-mode: forwards;
+}
+
+#rec2 {
+  margin-left: 200px;
+   transiton: width 2s;
+	animation: 30s ease-out 0s 1 grow, 35s ease-out 0s 1 spin2;
+	-webkit-animation: 30s ease-out 0s 1 grow, 35s ease-out 0s 1 spin2;
+	-moz-animation: 30s ease-out 0s 1 grow, 35s ease-out 0s 1 spin2;
+   -webkit-animation-fill-mode: forwards;
+   animation-fill-mode: forwards;
+   -moz-animation-fill-mode: forwards;
+}
+
+#rec3 {
+  margin-left: 200px;
+  margin-bottom: 200px;
+   transiton: width 2s;
+	animation: 20s ease-out 0s 1 grow, 25s ease-out 0s 1 spinz;
+	-webkit-animation: 20s ease-out 0s 1 grow, 25s ease-out 0s 1 spinz;
+	-moz-animation: 20s ease-out 0s 1 grow, 25s ease-out 0s 1 spinz;
+   -webkit-animation-fill-mode: forwards;
+   -moz-animation-fill-mode: forwards;
+   animation-fill-mode: forwards;
+
+}
+
+#rec4 {
+  margin-left: 200px;
+  margin-bottom: 200px;
+   transiton: width 2s;
+	animation: 35s ease-out 0s 1 grow, 40s ease-out 0s 1 spins;
+	-webkit-animation: 35s ease-out 0s 1 grow, 40s ease-out 0s 1 spins;
+	-moz-animation: 35s ease-out 0s 1 grow, 40s ease-out 0s 1 spins;
+   -webkit-animation-fill-mode: forwards;
+   -moz-animation-fill-mode: forwards;
+   animation-fill-mode: forwards;
+
+}
+
+#rec5 {
+  margin-left: 200px;
+  margin-bottom: 200px;
+   transiton: width 2s;
+	animation: 45s ease-out 0s 1 grow, 50s ease-out 0s 1 spin1;
+	-webkit-animation: 45s ease-out 0s 1 grow, 50s ease-out 0s 1 spin1;
+	-moz-animation: 45s ease-out 0s 1 grow, 50s ease-out 0s 1 spin1;
+   -webkit-animation-fill-mode: forwards;
+   -moz-animation-fill-mode: forwards;
+   animation-fill-mode: forwards;
+
+}
+
+.tagline{
+opacity:0;  
+  -webkit-animation:fadeIn ease-in 1;   
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards; 
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration: 4s;
+  -moz-animation-duration:4s;
+  animation-duration:4s;
+}
+
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+body{
+	height: auto;
+	width: 100%;
+	background: #01051a;
+	
+}
+
+
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(230deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(230deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(230deg);}
+}
+
+
+@-moz-keyframes spinz {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(210deg); }
+}
+@-webkit-keyframes spinz {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(210deg); }
+}
+@keyframes spinz {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(210deg);}
+}
+
+@-moz-keyframes spins {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(250deg); }
+}
+@-webkit-keyframes spins {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(250deg); }
+}
+@keyframes spins {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(250deg);}
+}
+
+@-moz-keyframes spin1 {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(270deg); }
+}
+@-webkit-keyframes spin1 {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(270deg); }
+}
+@keyframes spin1 {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(270deg);}
+}
+
+@-moz-keyframes spin2 {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(190deg); }
+}
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(190deg); }
+}
+@keyframes spin2 {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(190deg);}
+}
+
+
+
+
+@-moz-keyframes grow {
+   from {width: 40px; height: 40px;}
+to {width: 500px; height: 500px;} 
+}
+@-webkit-keyframes grow {
+ from {width: 40px; height: 40px;}
+to {width: 500px; height: 500px;} 
+}
+@keyframes grow {
+   from {width: 40px; height: 40px;}
+to {width: 500px; height: 500px;} 
+}
