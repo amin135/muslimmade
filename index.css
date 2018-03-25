@@ -1,0 +1,92 @@
+body {
+  margin:0; 
+  padding:0;
+   background: black;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+   
+    font-size: 5vw;
+  }
+}
+
+span {
+	color: white;
+}
+
+
+
+
+.side {
+	position: absolute;
+top: 50%;
+left: 40%;
+display: inline-flex;
+flex-direction: column;
+}
+
+.left {
+
+	transform: rotate(90deg);
+}
+
+.right {
+	transform: rotate(180deg);
+}
+
+.bottom{
+	transform: rotate(180deg);
+
+}
+
+.scroll-left {
+height: 100px;
+overflow: hidden;
+position: absolute;
+top: 50%;
+left: 30%;
+display: inline-flex;
+flex-direction: column;
+ transform: rotate(-45deg);
+}
+.main {
+
+width: 100%;
+height: 100%;
+margin: 0;
+line-height: 50px;
+color: white;
+text-align: center;
+/* Starting position */
+-moz-transform:translateY(100%);
+-webkit-transform:translateY(100%); 
+transform:translateY(100%);
+/* Apply animation to this element */ 
+-moz-animation: scroll-left 10s linear infinite;
+-webkit-animation: scroll-left 10s linear infinite;
+animation: scroll-left 10s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+0% { -moz-transform: translateY(100%); }
+100% { -moz-transform: translateY(-100%); }
+}
+@-webkit-keyframes scroll-left {
+0% { -webkit-transform: translateY(100%); }
+100% { -webkit-transform: translateY(-100%); }
+}
+@keyframes scroll-left {
+0% { 
+-moz-transform: translateY(100%); /* Browser bug fix */
+-webkit-transform: translateY(100%); /* Browser bug fix */
+transform: translateY(100%); 
+}
+100% { 
+-moz-transform: translateY(-100%); /* Browser bug fix */
+-webkit-transform: translateY(-100%); /* Browser bug fix */
+transform: translateY(-100%); 
+}
+}
