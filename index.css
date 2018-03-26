@@ -3,17 +3,12 @@
 height: 50px; 
 overflow: hidden;
 position: relative;
--webkit-transform: rotateZ(-30deg);
-        -ms-transform: rotateZ(-30deg);
-        transform: rotateZ(-30deg);
+z-index: -100;
+-webkit-transform: rotateZ(-200deg);
+        -ms-transform: rotateZ(-200deg);
+        transform: rotateZ(30deg);
 }
 
-p {
-	color: white;
-	font-size: 2rem;
-	font-family: 'Dancing Script', cursive;
-
-}
 
 
 
@@ -23,22 +18,26 @@ p {
 }
 
 
-.scroll-left p {
+.scroll-left span {
 position: absolute;
 width: 100%;
 height: 100%;
 margin: 0;
+color: white;
+	font-size: 2rem;
+	font-family: 'Roboto', sans-serif;
 line-height: 50px;
 text-align: center;
+transition-delay: 10s;
 
 /* Starting position */
 -moz-transform:translateX(100%);
 -webkit-transform:translateX(100%); 
 transform:translateX(100%);
 /* Apply animation to this element */ 
--moz-animation: scroll-left 10s cubic-bezier(0,0.1,0.2,0.4) infinite;
--webkit-animation: scroll-left 10s cubic-bezier(0,0.1,0.2,0.4) infinite;
-animation: scroll-left 10s cubic-bezier(0,0.1,0.2,0.4) infinite;
+-moz-animation: scroll-left 20s ease-out infinite;
+-webkit-animation: scroll-left 20s ease-out infinite;
+animation: scroll-left 20s ease-out infinite;
 }
 /* Move it (define the animation) */
 @-moz-keyframes scroll-left {
@@ -65,7 +64,9 @@ transform: translateX(100%);
 
 
 
-
+.more {
+	margin-top: 10px;
+}
 
 
 body,
@@ -76,14 +77,32 @@ html {
 
 body {
   
-  background: linear-gradient(-90deg, black, grey);
+
+  background: radial-gradient(#999999, #000000);
 }
 
-span {
+.nav {
+	background: linear-gradient(#999999, #000000);
+}
+
+.copy span {
 	font-size: 3rem;
-	display: inline-block;
-	 font-family: 'Bungee Shade', cursive;
 	
+	font-family: 'Bungee Shade', cursive;
+	
+
+}
+
+h1 {
+	display:inline;
+	border: 2px solid white;
+}
+
+.copy{
+	
+
+	z-index: 100;
+	position: relative;
 
 }
 
