@@ -15,7 +15,8 @@
   background: #5d5f63;
   z-index: 110;
   font-size: 2em;
-  
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 10px;
 }
 
 
@@ -137,7 +138,7 @@
 }
 
 .sub-text {
-	
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 .logo-banner {
@@ -145,10 +146,11 @@
 }
 
 
+
 @media only screen and (min-width: 801px) {
 
    .logo-banner { 
-      font-size: 4.5em; 
+      font-size: 5em; 
    }
 
 }
@@ -156,7 +158,8 @@
 @media only screen and (max-width: 800px) {
 
   .logo-banner { 
-      font-size: 2.5em; 
+      font-size: 2.6em; 
+
    }
 
 }
@@ -175,13 +178,35 @@
       font-size: 0.9em; 
    }
 
+   
+
 }
 
 
+@media only screen and (min-width: 801px) {
+  .footer{
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+}
+
+}
+
+@media only screen and (max-width: 800px) {
 
 
-.logo {
-	position: absolute;
+.footer{
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+}
+
+}
+
+
+@media only screen and (min-width: 801px) {
+  .logo {
+  position: absolute;
   margin: auto;
   top: 0;
   right: 0;
@@ -195,32 +220,56 @@
   flex-direction: column;
 }
 
+}
+
+@media only screen and (max-width: 800px) {
+
+
+.logo {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+   width: 50%;
+   
+   text-align: center;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+}
+
+
+
+
+
+
 
 
 .sub-text a {
   color: inherit;
+
 }
 
 .sub-text a:hover {
+
   
-  text-decoration: none;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 
 .sub-text a:active {
   
-  text-decoration: none;
-  font-weight: 800;
+  
+  font-weight: 900;
 }
 
 
 
-.footer{
-  position: absolute;
-  bottom: 0;
-  left: 40%;
-}
+
 
 
 .color {
@@ -294,3 +343,4 @@
   z-index: 300;
   
 }
+
