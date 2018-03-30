@@ -1,9 +1,69 @@
+.animation-text {
+  z-index: 80;
+
+}
+
+.animation-text h1 {
+   font-family: 'Josefin Sans', sans-serif;
+   animation: type 3s steps(5);
+   overflow: hidden;
+   white-space: nowrap;
+
+}
+
+@keyframes type {
+   0% {
+    width: 0ch;
+   }
+
+   100% {
+    width: 5ch;
+   }
+}
 
 
 
 
 
+@media only screen and (min-width: 801px) {
+  .animation-text {
+  position: absolute;
+  margin: auto;
+  transform: skewY(150deg);
+  top: 10%;
+  right: 0;
+  bottom: 50%;
+  left: 0;
+   width: 50%;
+   padding: 10px;
+   text-align: center;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
 
+}
+
+@media only screen and (max-width: 800px) {
+
+
+.animation-text {
+  position: absolute;
+  margin: auto;
+    transform: skewY(150deg);
+    top: 10%;
+  right: 0;
+  bottom: 50%;
+  left: 0;
+   width: 50%;
+   
+   text-align: center;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+}
 
 
 
@@ -194,12 +254,32 @@
 
    .sub-text { 
       font-size: 0.9em; 
+      width: 60%;
+      display: block;
+      margin-left: 30%;
    }
 
    
 
 }
 
+@media only screen and (min-width: 801px) {
+
+   .show { 
+      display: none !important;
+   }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+   .show { 
+      display: block !important;
+   }
+
+   
+
+}
 
 @media only screen and (min-width: 801px) {
   .footer{
